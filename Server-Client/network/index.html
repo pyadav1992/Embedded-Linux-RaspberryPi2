@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<TITLE>
+Web-enabled Thermostat
+</TITLE>
+</HEAD>
+
+<BODY>
+<br><br>
+<img align=right vspace=5 hspace=10 src="tux.gif">
+<center><b>Simple Embedded Web Server</b></center>
+<p>
+The current temperature at this device is: <embed type="text/html" src="cgi-bin/test.cgi" width="150" height="20"> degrees
+<br><br>
+<b>Form input:</b>
+<br><br>
+<FORM ACTION="cgi-bin/params.cgi" METHOD="POST">
+  <INPUT TYPE=TEXT NAME="Setpoint" SIZE=10>Setpoint: 
+  <INPUT TYPE=TEXT NAME="Limit" SIZE=10>Limit: 
+  <INPUT TYPE=TEXT NAME="Deadband" SIZE=10>Deadband: 
+  <INPUT TYPE="submit" NAME="Go">
+</FORM>
+</BODY>
+</HTML>
