@@ -1,0 +1,3 @@
+- This files creates a cooling stage of the thermostat. 
+- Cooler is turned on when the temperature goes above a set point and an alarm is alerted when the temperature goes beyond a limit.
+- This is fork() and posix threads based multitasking implementation.
